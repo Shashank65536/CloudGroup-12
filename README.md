@@ -1,29 +1,24 @@
-# CloudGroup-12
+# CloudGroup-12: Airline Passenger Satisfaction Analysis
+
+[![AWS Services Used](https://img.shields.io/badge/AWS-SageMaker%2C%20S3%2C%20Glue%2C%20Athena%2C%20Quicksight-blue)](#)
+[![Data Source](https://img.shields.io/badge/Data%20Source-Kaggle-orange)](https://www.kaggle.com/datasets/teejmahal20/airline-passenger-satisfaction)
+
+## Overview
+CloudGroup-12's project focuses on predicting and understanding factors influencing passenger satisfaction in the airline industry. This project aligns with educational goals related to machine learning and data analytics, with practical applications in customer service and business strategy. It involves the integration of various AWS services for data handling, processing, and model deployment.
 
 ## Table of Contents
-1. [Project Scope](#project-scope)
-   - [Specific Problem](#specific-problem)
-   - [Domain](#domain)
-2. [Literature Review](#literature-review)
-3. [Data Source(s)](#data-sources)
-4. [Domain-specific Challenges](#domain-specific-challenges)
-5. [KPI’s](#kpis)
-6. [Deliverable -2](#deliverable---2)
-   - [Data Understanding](#data-understanding)
-   - [AWS Pipeline / Solution Chart](#aws-pipeline-solution-chart)
-   - [Aws Glue Pipeline](#aws-glue-pipeline)
-   - [AWS Athena](#aws-athena)
-   - [AWS Quicksight](#aws-quicksight)
-   - [AWS S3](#aws-s3)
-7. [Deliverable 3](#deliverable---3)
-   - [Data Sources](#data-sources)
-   - [Data Preprocessing](#data-preprocessing)
-   - [Model Training and development](#model-development-and-traning)
-   - [Evaluation and Validation](#evaluation-and-validation)
-   - [Screenshots](#screenshots)
+- [Project Scope](#project-scope)
+- [Literature Review](#literature-review)
+- [Data Sources](#data-sources)
+- [Domain-specific Challenges](#domain-specific-challenges)
+- [KPI’s](#kpis)
+- [Deliverables](#deliverables)
+  - [Data Understanding and AWS Pipeline](#data-understanding-and-aws-pipeline)
+  - [Model Training and Evaluation](#model-training-and-evaluation)
+  - [Deployment and Cost Analysis](#deployment-and-cost-analysis)
+- [Screenshots](#screenshots)
 
 ## Project Scope
-
 ### Specific Problem
 The project aims to predict and understand factors influencing passenger satisfaction, aligning with educational goals related to machine learning and data analytics with practical applications in customer service and business strategy.
 
@@ -34,7 +29,7 @@ The project aims to predict and understand factors influencing passenger satisfa
 ## Literature Review
 Conduct a literature review of research papers, case studies, articles, and books related to the chosen domain. The purpose is to stay informed about the latest advancements and best practices in the field. Sources should be current and at least 5 sources should be documented and summarized.
 
-## Data Source(s)
+## Data Sources
 The potential data sources include:
 1. [Airline Passenger Satisfaction | Kaggle](https://www.kaggle.com/datasets/teejmahal20/airline-passenger-satisfaction)
 This dataset on Kaggle contains customer satisfaction scores from airline passengers.
@@ -54,7 +49,7 @@ This dataset includes airline satisfaction scores for 129,880 passengers. Each r
 
 
 ## KPI’s
-Key Performance Indicators (KPIs) in this context would encompass the utilization of data attributes, the extent of data preprocessing, and the diversity of the dataset. It's crucial to have a wide-ranging dataset for robust analysis. Another significant KPI involves experimenting with various machine learning algorithms to identify the one that delivers the best performance. The optimal model would be the one that most accurately predicts or classifies according to the problem at hand. These KPIs collectively contribute to the successful analysis of airline passenger satisfaction.
+Key Performance Indicators (KPIs) in this context would encompass the utilization of data attributes, the extent of data preprocessing, and the diversity of the dataset.
 
 ## Deliverable - 2
 
@@ -144,3 +139,63 @@ Visualizations, including count plots, histograms, and heatmaps, are employed to
 ![Sagemaker-Evaluation Metric1](https://github.com/Datta9/CloudGroup-12/blob/main/Screenshots/eval_metric.png?raw=true)
 ![Sagemaker-Evaluation Metric2](https://github.com/Datta9/CloudGroup-12/blob/main/Screenshots/eval_metrc2.png?raw=true)
 ![Sagemaker-ROC Curve](https://github.com/Datta9/CloudGroup-12/blob/main/Screenshots/roc_curve.png?raw=true)
+
+## DELIVERABLE - 4
+
+# AWS Pricing Calculator - Cost Estimation for Lambda, Glue, SageMaker, Athena, QuickSight, and S3
+
+## Overview
+
+This README provides an overview of our cost estimation process using the AWS Pricing Calculator for various AWS services, including AWS Lambda, AWS Glue, Amazon SageMaker, Amazon Athena, Amazon QuickSight, and Amazon S3. 
+
+## AWS Pricing Calculator
+
+The AWS Pricing Calculator is a web-based tool provided by Amazon Web Services that allows us to estimate the costs associated with using AWS services. It enables us to plan our AWS infrastructure and services usage while keeping our budget in mind.
+
+## Estimating Costs
+
+We have used the AWS Pricing Calculator to estimate the costs for the following AWS services:
+
+### AWS Lambda
+- We estimated costs based on the number of Lambda invocations and the memory allocated to each function.
+
+### AWS Glue
+- Our cost estimation for AWS Glue considered the number of ETL jobs and data processing requirements.
+
+### Amazon SageMaker
+- We estimated costs for SageMaker based on the number of notebook instances and their configurations.
+
+### Amazon Athena
+- Our cost estimation for Athena considered the volume of queries and data processed.
+
+### Amazon QuickSight
+- We estimated costs for QuickSight based on the number of user licenses and usage patterns.
+
+### Amazon S3
+- Our cost estimation for Amazon S3 took into account storage usage and data transfer costs.
+
+## Customization and Optimization
+
+We customized the parameters for each service to match our specific usage patterns and requirements. The AWS Pricing Calculator allowed us to experiment with different configurations to find the most cost-effective setup for our use cases.
+
+## Budget Planning
+
+The cost estimates generated by the AWS Pricing Calculator are valuable for budget planning. They help us forecast and allocate resources efficiently while avoiding unexpected cost overruns.
+
+## Documentation and Sharing
+
+We have documented our cost estimates using the AWS Pricing Calculator and have the ability to save and share these estimates with team members and stakeholders. This facilitates collaboration and decision-making.
+
+## Further Analysis
+
+We can use these cost estimates in conjunction with AWS Cost Explorer to gain deeper insights into our projected costs and historical spending trends.
+
+## Conclusion
+
+The AWS Pricing Calculator is a versatile tool that empowers us to estimate and plan our AWS service costs effectively. By using it, we can make informed decisions about resource provisioning, cost optimization, and budget planning within the AWS cloud environment.
+
+For more details on our cost estimation, refer to the AWS Pricing Calculator documentation and the saved cost estimates.
+
+
+
+
